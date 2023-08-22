@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words and sentence counter</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div id="Box">
+
+            <div id="Text_box">
+                <h3 id="heading">Enter Text Here:</h3>
+                <textarea name="text_received" id="textarea" cols="45" rows="7"></textarea>
+                <br>
+                <button onclick="display_results()" id="evaluate">Evaluate</button>
+            </div>
+
+
+            <div id="Results">
+
+                <p id="result_text">
+                    <span class="field">
+                        <p>Number of characters: <span class = "result_text" id="characters" ></span></p>
+                    </span>
+                    <span class="field">
+                        <p>Number of characters(Without spaces): <span id="characters_spaces" class = "result_text"></span></p>
+                    </span>
+                    <span class="field">
+                        <p>Number of words: <span id="Words" class = "result_text"></span></p>
+                    </span>
+                    <span class="field">
+                        <p>Number of Sentences : <span id="Sentences" class = "result_text"></span></p>
+                    </span>
+                </p>
+            </div>
+
+        </div>
+    </center>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
