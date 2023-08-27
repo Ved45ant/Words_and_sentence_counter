@@ -15,8 +15,8 @@ spaces_counter = (str) => {
 }
 
 word_counter = (str) => {
-    const spitters = /[ .?!\n]/;
-    let words_array = str.split(spitters);
+    const splitters = /[ .?!\n]/;
+    let words_array = str.split(splitters);
 
     let no_word = (word = words_array.filter(word => {
         return word != "";
